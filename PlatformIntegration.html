@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custome CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400, 500, 700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/d3-tip-default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/typeahead.jquery.css"/>
+		<link rel="stylesheet" type="text/css" href="css/usps-data-vis.css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Platform Integration</title>
+  </head>
+  <body>
+    <!--- 1st nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light FirstNavbar">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#1stTopNavbar" aria-controls="navbarsExampleDefault"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu__icon menu__icon--open"><i class="fas fa-bars"></i></span>
+        <span class="menu__icon menu__icon--close">
+          <i class="fas fa-times"></i></span>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="1stTopNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse" id="1stTopNavbar">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Analytics University</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-youtube"></i> BlueTube</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-comments"></i> Contact Us</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> My Dashboard</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">My Subscriptions</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">About</a>
+                      <a class="dropdown-item" href="#">Help</a>
+                    </div>
+                  </li>
+                  </ul>
+        </div>
+        </div>
+      </nav>
+    <!--- 2nd nav -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top SecondNavbar">
+      <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV_Logo.svg"></a>
+      <span id="projectBranding">
+              <div class="projectTitle d-none d-lg-block">Informed Visibility</div>
+              <div class="projectSlogan d-none d-lg-block">The single source for all your mail visibility needs.</div>
+           </span>
+           <div class="slant d-none d-lg-block"></div>
+           <div class="EATitle d-none d-lg-block">Enterprise Analytics</div>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#2ndTopNavbar" aria-controls="navbarsExampleDefault"
+           aria-expanded="false" aria-label="Toggle navigation">
+           <span class="menu__icon menu__icon--open"><i class="fas fa-bars"></i></span>
+           <span class="menu__icon menu__icon--close">
+             <i class="fas fa-times"></i></span>
+         </button>
+
+    <div class="collapse navbar-collapse" id="2ndTopNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Analytics University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-youtube"></i> BlueTube</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-comments"></i> Contact Us</a>
+              </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> My IV</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">My Subscriptions</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Help</a>
+              </div>
+            </li>
+            </ul>
+    </div>
+  </nav>
+<!--David Code-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="titleMargin">
+        <h1>Priority Mail Express Daily Failures</h1>
+      </div>
+      <div class="col"></div>
+
+      <div class="metric-box col-12">
+        <strong>Metric to Display</strong>
+        <form action="">
+        &nbsp&nbsp
+        <input type="radio" id="failed-mode" name="chart-mode" value="failedCount" checked="checked"/>
+        
+        <label for="display-mode">Failed Piece Count </label>&nbsp&nbsp
+        <input type="radio" id="atrisk-mode" name="chart-mode" value="atRisk" />
+        <label for="select-mode">$ At Risk </label>&nbsp&nbsp
+        <input type="radio" id="estatrisk-mode" name="chart-mode" value="estAtRisk" />
+        <label for="select-mode">Estimated $ At Risk </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <h5>Failed Volume by Scheduled Delivery Date</h5>
+        <div id="scheduled-delivery-date" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"ScheduledDeliveryDate",
+          "dataType":"date",
+          "chartType":"barChart"}'>
+        </div>
+      </div>
+    
+      <div class="col-sm-6 col-lg-4">
+        <h5>Origin Area</h5>
+        <div id="Origin-Area-Name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"OriginAreaName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <h5>Origin District</h5> 
+        <div id="origin-district-name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"OriginDistrictName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div> 								
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Origin MPOO</h5> 
+        <div id="origin-mpoo-name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"OriginMPOOName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>		
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Destination Area</h5>
+        <div id="destination-area-name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"DestinationAreaName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>  
+
+      <div class="col-sm-6 col-lg-4">
+        <h5>Destination District</h5>
+        <div id="destination-district-name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"DestinationDistrictName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <h5>Destination MPOO</h5>
+        <div id="destination-mpoo-name" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"DestinationMPOOName",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Acceptance ZIP Code</h5> 
+        <div id="origin-zip-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"OriginZipCode",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <h5>Origin Enroute ZIP Code</h5> 
+        <div id="origin-enroute-zip-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"OriginEnrouteZipcode",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+            
+      <div class="col-sm-6 col-lg-4">
+        <h5>Destination Enroute ZIP Code</h5>
+        <div id="destination-enroute-zip-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"DestinationEnrouteZipcode",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>AAU ZIP Code</h5>
+        <div id="first-aau-zip-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"FirstAAUZipCode",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>1st Stop ZIP Code</h5>
+        <div id="first-stop-zip-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"FirstStopZipCode",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <h5>Service Standard</h5>
+        <div id="svc-std-day-time-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"ServiceStandard",
+          "descriptorAccessor":"descriptorServiceStandard",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>  
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Scheduled Delivery Time</h5>
+        <div id="scheduled-delivery-ddthr" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"ScheduledDeliveryDDTHr",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>  
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Failure Type</h5>
+        <div id="Failure-Type" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"FailureType",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+  
+      <div class="col-sm-6 col-lg-4">
+        <h5>PO Box Indicator</h5>
+        <div id="po-box-ind" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"POBoxInd",
+          "descriptorAccessor":"descriptorYesNo",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Mail Type Designation</h5>
+        <div id="mail-type-designation" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"MailTypeDesignation",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+                            
+      <div class="col-sm-6 col-lg-4">
+        <h5>NPA Designation</h5>
+        <div id="npa-designation" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"NPADesignation",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>				
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Sales Source Code</h5>
+        <div id="sales-source-code" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"SalesSourceCode",
+          "descriptorAccessor":"descriptorSalesSource",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4">
+        <h5>Missent</h5> 
+        <div id="root-cause" class="usps-data-vis" data-usps-data-vis='{
+          "attribute":"RootCause",
+          "descriptorAccessor":"descriptorMissent",
+          "dataType":"string",
+          "chartType":"rowChart"}'>
+        </div>
+      </div>
+
+    </div> <!-- row -->
+  </div> <!-- container-fluid -->
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/typeahead.jquery.js"></script>
+  <script src="js/d3.js"></script>
+  <script src="js/crossfilter.js"></script>
+  <script src="js/d3-tip.js"></script>
+  <script src="js/crossfilter-controller.js"></script>
+  <script src="js/promise-polyfill.js"></script>
+  <script src="js/fetch.umd.js"></script>
+  <script src="js/chart-registry.js"></script>
+  <script src="js/chart-control.js"></script>
+  <script src="js/usps-charts.js"></script>
+  <script src="js/usps-data-vis.js"></script>
+
+  <script>
+    "use strict";
+    
+    // Load navigation header
+    $('#navigation').load('html/navigation.html');
+    
+    var metricName = "Total";
+    
+    var chartOptions = {
+      // default options
+      keyAccessor: function(d) { 
+        return d.key ? d.key : null; 
+      },
+      descriptorAccessor: function(d) {
+        var desc = this.keyAccessor() && this.keyAccessor()(d) || null;
+        if (desc == null || desc == '' || desc == '?') {
+          desc = 'N/A';
+        }
+        return desc;
+      },
+      metricAccessor: function(d) { 
+        return d.value[metricName] ? d.value[metricName] : null; 
+      },
+      metric2Accessor: function(d) {
+        return null;
+      },
+      colors: null,
+      labelAccessor: function(d) {
+        var k = (this.descriptorAccessor() && this.descriptorAccessor()(d)) ||
+          (this.keyAccessor() && this.keyAccessor()(d)) || null;
+        var r = this.metric2Accessor() && this.metric2Accessor()(d) || null;
+        var l = k ? k instanceof Date ? d3.utcFormat('%b %d, %Y')(k) : k : '';
+        l += k && r ? ' — ' : '';
+        l += r ? d3.format('0.1%')(r) : '';
+        return l;
+      },
+      formatTip: function(d) {
+        var k = (this.descriptorAccessor() && this.descriptorAccessor()(d)) ||
+          (this.keyAccessor() && this.keyAccessor()(d)) || null;
+        var q = this.metricAccessor() && this.metricAccessor()(d) || null;
+        var t = '<table>'
+            + '<tr><td><span style="font-weight:400;">Item:</span></td><td style="width:2em"></td>'
+            + '<td><span style="font-weight:700;float:right">'+(k && k instanceof Date ? d3.utcFormat('%b %d, %Y')(k) : k)+'</span></td></tr>';
+
+        var metricLabel = 'Failed Piece Count';
+        var metricFormat = d3.format(',d');
+        if (metricName == 'PostageAmt') {
+          metricLabel = '$ At Risk';
+          metricFormat = d3.format('$,d');
+        } else if (metricName == 'EstPostageAmt') {
+          metricLabel = 'Estimated $ At Risk';
+          metricFormat = d3.format('$,d');
+        }
+          
+        if (q) {
+          t +=  '<tr><td><span style="font-weight:400">'+metricLabel+':</span></td><td style="width:2em"></td>'
+            + '<td><span style="font-weight:700;float:right">'+metricFormat(q)+'</span></td></tr>';
+        }
+        t += '</table>';
+        
+        return t;
+      },
+      
+      // custom options
+      descriptorYesNo: function(d) {
+        return ({
+          'Y': 'Yes',
+          'N': 'No'
+        })[this.keyAccessor()(d)] || 'N/A';
+      },
+      descriptorSalesSource: function(d) {
+        return ({
+          'R': 'Retail',
+          'P': 'PC Postage',
+          'M': 'Commercial',
+          'O': 'Unknown'
+        })[this.keyAccessor()(d)] || 'N/A';
+      },
+      descriptorServiceStandard: function(d) {
+        return ({
+          '0D': '1 Day',
+          'ND': '1 Day',
+          '2D': '2 Day'
+        })[this.keyAccessor()(d)] || 'N/A';
+      },
+      descriptorMissent: function(d) {
+        return ({
+          'Not Defined': 'No',
+          'Missent': 'Yes'
+        })[this.keyAccessor()(d)] || 'N/A';
+      }
+    }; //chartOptions
+
+    uspsDataVis.build(chartOptions);
+    
+    var controller = crossfilterController().reduce(
+      function(p,v) {
+        p.Total += +v.Total;
+        p.WithPostageInd += +v.WithPostageInd;
+        p.PostageAmt += +v.PostageAmt;
+        p.EstPostageAmt = p.PostageAmt * p.Total / (p.WithPostageInd || 1);
+        return p;
+      },
+      function(p,v) {
+        p.Total -= +v.Total;
+        p.WithPostageInd -= +v.WithPostageInd;
+        p.PostageAmt -= +v.PostageAmt;
+        p.EstPostageAmt = p.PostageAmt * p.Total / (p.WithPostageInd || 1);
+        return p;
+      },
+      function() {
+        return {
+          Total: 0,
+          WithPostageInd: 0,
+          PostageAmt: 0,
+          EstPostageAmt: 0
+        }
+      }
+    );
+    
+    controller.dataFilter(function(d) {
+      return d.value[metricName] > 0;
+    });
+
+    chartRegistry.getChartRecords().forEach(function(d){
+      controller.addChart(d.chart, d.ctrl, d.attr);
+    });
+    
+    // Wire up events to controllers, etc.
+    
+    $('input[type=radio][name=chart-mode]').change(function() {
+      metricName = (this.value === 'atRisk')
+            ? 'PostageAmt'
+            : (this.value === 'estAtRisk')
+              ? 'EstPostageAmt'
+              : 'Total';
+
+      controller.redrawAll();
+    });
+    
+    // Enable popovers (in navigation header)
+    $(function () {
+      $('[data-toggle="popover"]').popover({
+      container: 'body'
+      })
+    });
+    
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    });
+    
+    // Load the data and display the charts
+    d3.dsv("|", 'PMEFailedPieces.csv', function(d) {
+        d.ScheduledDeliveryDate = d3.utcParse('%Y-%m-%d')(d.ScheduledDeliveryDate);
+        d.Total = +d.Total;
+        d.WithPostageInd = +d.WithPostageInd;
+        d.PostageAmt = +d.PostageAmt;
+        return d;
+      })
+      .then(function(data) {
+        controller.loadData(data);
+        controller.drawAll();
+      });
+    
+    var resizeCharts = (function(){
+      var timeout;
+      
+      var r = function() {
+        chartRegistry.getCharts().forEach(function(chart) {
+          var w = chart.width();
+          chart.naturalWidth();
+          if (w !== chart.width()) {
+            chart.draw(); 
+          }
+        });
+      };
+      
+      return function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(r, 250);
+      }
+    })();
+    
+    window.onresize = resizeCharts;
+    
+    window.addEventListener('orientationchange', resizeCharts, false);
+  
+  </script>
+  <!--End David Code-->
+
+<!--Footer-->
+    <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Team</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+              </ul>
+            </div>
+        </div>
+        </div>
+
+  
+<!-- /.container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
