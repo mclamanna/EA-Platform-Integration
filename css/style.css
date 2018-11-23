@@ -6,6 +6,25 @@ html {
     line-height: 1.5;
 }
 
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700; 
+    font-size: 2.25rem
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+h6 {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+}
+
 [aria-expanded="false"] .menu__icon--open {
     display: block;
 }
@@ -22,41 +41,36 @@ html {
     display: block;
 }
 
+/* First Navbar */
+
 .FirstNavbar {
     z-index: 2;
-}
-
-.SecondNavbar {
- z-index: 1;
 }
 
 .navbar-light .navbar-toggler {
     outline: none!important;
     border: #092B52;
 }
-    
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6c757d;;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #6c757d;
+    text-decoration: underline;
+}
+
+/* Second Navbar */
+
+.SecondNavbar {
+    z-index: 1;
+}
+
 .navbar-dark .navbar-toggler {
     color: #ffffff;
     outline: none!important;
     border: #092B52;
-}
-
-h1 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700; 
-    font-size: 2.25rem
-}
-
-h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-
-h6 {
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    font-weight: 700; 
 }
 
 .titleMargin {
@@ -81,42 +95,70 @@ h6 {
 .projectTitle {
     font-size: 1.14rem;
     font-style: italic;
+    font-weight: 700;
     color: #ffffff;
-}
-
-.projectTitle {
-    font-weight: 600;
 }
 
 .projectSlogan {
     font-size: .8rem;
-    color: #e5ebf1;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .slant {
     background-color: #f9f9f966;
     height: 2rem;
-    width: 1px;
+    width: 2px;
     margin-left: 15px;
     transform: rotate(10deg);
 }
 
 .EATitle,
 .EATitle {
-    font-size: 1.14 rem;
+    font-size:  1.14rem;
     font-style: italic;
+    font-weight: 700;
     color: #ffffff;
     margin-left: 15px;
 }
 
-/* nav bar */
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+
+/* Footer */
+
+.footerHead {
+    padding: 1rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.text-footer {
+    font-family: Roboto, sans-serif; 
+    font-size: .8rem;
+    color: #6c757d;
+}
+
+.text-footer2 {
+    font-family: Roboto, sans-serif; 
+    font-size: .8rem;
+    color: #6c757d;
+    margin-left: 2rem;
+}
+
+.footer {
+    background-color: #F8f9fa;
+}
+
+
 
 /*
 .svg-container {
@@ -135,6 +177,3 @@ h6 {
 }
 */
 
-.footer {
-    background-color: #092B52;
-}
