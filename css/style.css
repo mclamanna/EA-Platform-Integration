@@ -61,6 +61,28 @@ h6 {
     text-decoration: underline;
 }
 
+#projectBranding1 {
+    margin-left: 10px;
+    line-height: 1.32rem;
+}
+
+.EATitle1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    font-size:  1.14rem;
+    color: #0e4194;
+    margin-left: -15px;
+}
+
+.navbar-brand3 {
+    margin-left: 2rem;
+}
+
+.navbar-brand4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /* Second Navbar */
 
 .SecondNavbar {
@@ -86,7 +108,7 @@ h6 {
     width: 50px;
 }
 
-#projectBranding {
+#projectBranding2 {
     margin-left: 10px;
     line-height: 1.32rem;
 }
@@ -113,8 +135,7 @@ h6 {
     transform: rotate(10deg);
 }
 
-.EATitle,
-.EATitle {
+.EATitle2 {
     font-size:  1.14rem;
     font-style: italic;
     font-weight: 700;
@@ -129,6 +150,23 @@ h6 {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+
+.barcode-input input {
+    font-size:  .8rem;
+    font-style: italic;
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+    background-color: transparent;
+    width: 300px;
+    outline: none!important;
+}
+
+.btn-link{
+    margin-left: -1.8rem;
+    color: #ffffff;
 }
 
 /* Footer */
