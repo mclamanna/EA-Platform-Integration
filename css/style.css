@@ -43,8 +43,13 @@ h6 {
 
 /* First Navbar */
 
+.mt-3, .my-3 {
+    margin-top: .85rem!important;
+}
+
 .FirstNavbar {
     z-index: 2;
+    padding: 0 1rem;
 }
 
 .navbar-light .navbar-toggler {
@@ -84,8 +89,9 @@ h6 {
 }
 
 .EANews {
-    margin-top: -.2rem;
+    margin-top: .1rem!important;
 }
+
 /* Second Navbar */
 
 .SecondNavbar {

@@ -32,22 +32,58 @@
      
         <div class="collapse navbar-collapse" id="1stTopNavbar">
    
-          
+          <script>
+            function hoverEANews(element) {
+         element.setAttribute('src', 'Images/EANews2.svg');
+            }
+       function unhoverEANews(element) {
+         element.setAttribute('src', 'Images/EANews1.svg');
+       }
+
+            function hoverDMS(element) {
+         element.setAttribute('src', 'Images/DMSLogo2.svg');
+            }
+       function unhoverDMS(element) {
+         element.setAttribute('src', 'Images/DMSLogo.svg');
+       }
+
+       function hoverETA(element) {
+         element.setAttribute('src', 'Images/ETALogo2.svg');
+            }
+       function unhoverETA(element) {
+         element.setAttribute('src', 'Images/ETALogo.svg');
+       }
+
+       function hoverIV(element) {
+         element.setAttribute('src', 'Images/IVLogo2.svg');
+            }
+       function unhoverIV(element) {
+         element.setAttribute('src', 'Images/IVLogo.svg');
+       }
+       
+       function hoverSV(element) {
+         element.setAttribute('src', 'Images/SVweb2.svg');
+            }
+       function unhoverSV(element) {
+         element.setAttribute('src', 'Images/SVweb.svg');
+       }
+          </script>   
+
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item ml-3 EANews">
-                      <a class="nav-link" href="#"><img src="Images/EANews.svg" width="100" alt="EALogo"></a>
+                      <a class="nav-link" href="#"><img src="Images/EANews1.svg"  onmouseover="hoverEANews(this);" onmouseout="unhoverEANews(this);" width="76" alt="News"></a>
                     </li>
                   <li class="nav-item ml-3 mt-3">
-                      <a class="nav-link" href="#"><img src="Images/DMSLogo.svg" width="140" alt="EALogo"></a>
+                      <a class="nav-link" href="#"><img src="Images/DMSLogo.svg" onmouseover="hoverDMS(this);" onmouseout="unhoverDMS(this);" width="126" alt="DMS"></a>
                     </li>
                     <li class="nav-item ml-3 mt-3">
-                        <a class="nav-link" href="#"><img src="Images/IVLogo.svg" width="42" alt="EALogo"></a>
+                        <a class="nav-link" href="#"><img src="Images/IVLogo.svg" onmouseover="hoverIV(this);" onmouseout="unhoverIV(this);" width="38" alt="IV"></a>
                       </li>
                       <li class="nav-item ml-3 mt-3">
-                          <a class="nav-link" href="#"><img src="Images/SVweb.svg" width="54" alt="EALogo"></a>
+                          <a class="nav-link" href="#"><img src="Images/SVweb.svg" onmouseover="hoverSV(this);" onmouseout="unhoverSV(this);" width="50" alt="SVweb"></a>
                         </li>
                         <li class="nav-item ml-3 mr-3 mt-3">
-                            <a class="nav-link" href="#"><img src="Images/ETALogo.svg" width="73" alt="EALogo"></a>
+                            <a class="nav-link" href="#"><img src="Images/ETALogo.svg" onmouseover="hoverETA(this);" onmouseout="unhoverETA(this);" width="76" alt="ETA"></a>
                           </li>
                           <li>
                           <div class="input-group mt-3">
@@ -73,7 +109,7 @@
       </nav>
     <!--- 2nd nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top SecondNavbar">
-      <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV_Logo.svg"></a>
+      <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV2Logo.svg"></a>
       <span id="projectBranding2">
               <div class="projectTitle d-none d-lg-block">Informed Visibility</div>
               <div class="projectSlogan d-none d-lg-block">The single source for all your mail visibility needs.</div>
