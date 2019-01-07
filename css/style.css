@@ -58,7 +58,7 @@ h6 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #6c757d;;
+    color: #6c757d;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -90,6 +90,13 @@ h6 {
 
 .EANews {
     margin-top: .1rem!important;
+}
+
+.searchButton {
+    color: #6c757d;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f8f9fa;
 }
 
 /* Second Navbar */
@@ -169,7 +176,7 @@ h6 {
     border-bottom: 1px solid white;
     color: #ffffff;
     background-color: transparent;
-    width: 300px;
+    width: 200px;
     outline: none!important;
 }
 

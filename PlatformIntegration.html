@@ -18,10 +18,10 @@
   </head>
   <body>
     <!--- 1st nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light FirstNavbar">
+    <nav class="navbar navbar-expand-md navbar-light bg-light FirstNavbar">
         <a class="navbar-brand" href="#"><img src="Images/EALogo.svg" width="106" alt="EALogo"></a>
         <span id="projectBranding1">
-          <div class="EATitle1 d-none d-lg-block">Enterprise Analytics</div>
+          <div class="EATitle1 d-none d-xl-block">Enterprise Analytics</div>
         </span>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#1stTopNavbar" aria-controls="navbarsExampleDefault"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -87,16 +87,33 @@
                           </li>
                           <li>
                           <div class="input-group mt-3">
-                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                            <input type="text" class="form-control d-none d-sm-none d-lg-block d-xl-block" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
                             <div class="input-group-append">
                               <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
                             </div>
                           </div>
                           </li>
+                          <!--
+                          <li>
+                            <div class="input-group mt-3 d-none d-sm-block d-lg-none d-xl-none">
+                                <button class="btn btn-outline-secondary searchButton" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                            </li>
                           
+                     <li>
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="fas fa-search"></i></button>
+                            </button>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <input type="text" class="form-control d-none d-sm-none d-lg-block d-xl-block" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                            </div>
+                          </div>
+                        </li>
+                      -->
                
                 <li class="nav-item dropdown ml-3 mt-3">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> My Dashboard</a>
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">My Subscriptions</a>
                       <div class="dropdown-divider"></div>
@@ -108,14 +125,14 @@
         </div>
       </nav>
     <!--- 2nd nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top SecondNavbar">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top SecondNavbar">
       <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV2Logo.svg"></a>
       <span id="projectBranding2">
-              <div class="projectTitle d-none d-lg-block">Informed Visibility</div>
-              <div class="projectSlogan d-none d-lg-block">The single source for all your mail visibility needs.</div>
+              <div class="projectTitle d-none d-xl-block">Informed Visibility</div>
+              <div class="projectSlogan d-none d-xl-block">The single source for all your mail visibility needs.</div>
            </span>
-           <div class="slant d-none d-lg-block"></div>
-           <div class="EATitle2 d-none d-lg-block">Enterprise Analytics</div>
+           <div class="slant d-none d-xl-block"></div>
+           <div class="EATitle2 d-none d-xl-block">Enterprise Analytics</div>
            
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#2ndTopNavbar" aria-controls="navbarsExampleDefault"
            aria-expanded="false" aria-label="Toggle navigation">
@@ -140,7 +157,7 @@
               <a class="nav-link" href="#"><i class="fab fa-youtube"></i> BlueTube</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-envelope"></i> Contact Us</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Reports</a>
                   <div class="dropdown-divider"></div>
