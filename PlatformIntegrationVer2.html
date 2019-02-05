@@ -5,63 +5,118 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Custome CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300, 400, 500, 700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/d3-tip-default.css"/>
-    <link rel="stylesheet" type="text/css" href="css/typeahead.jquery.css"/>
-    <link rel="stylesheet" type="text/css" href="css/usps-data-vis.css"/>
     <link href="css/style.css" rel="stylesheet">
     <title>Platform Integration</title>
   </head>
   <body>
     <!--- 1st nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light FirstNavbar">
-        <a class="navbar-brand" href="#"><img src="Images/EALogo.svg" width="100" alt="EALogo"></a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light FirstNavbar">
+        <a class="navbar-brand" href="#"><img src="Images/EALogo3.svg" width="50" alt="EALogo"></a>
+        <!--
         <span id="projectBranding1">
-          <div class="EATitle1 d-none d-lg-block">Enterprise Analytics</div>
+          <div class="EATitle1 d-none d-xl-block">Enterprise Analytics</div>
         </span>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#1stTopNavbar" aria-controls="navbarsExampleDefault"
+      -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#TopNavbar" aria-controls="navbarsExampleDefault"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="menu__icon menu__icon--open"><i class="fas fa-bars"></i></span>
         <span class="menu__icon menu__icon--close">
           <i class="fas fa-times"></i></span>
       </button>
      
-        <div class="collapse navbar-collapse" id="1stTopNavbar">
+        <div class="collapse navbar-collapse" id="TopNavbar">
    
-          
+          <script>
+            function hoverEANews(element) {
+         element.setAttribute('src', 'Images/EANews2.svg');
+            }
+       function unhoverEANews(element) {
+         element.setAttribute('src', 'Images/EANews1.svg');
+       }
+
+            function hoverDMS(element) {
+         element.setAttribute('src', 'Images/DMSLogo2.svg');
+            }
+       function unhoverDMS(element) {
+         element.setAttribute('src', 'Images/DMSLogo.svg');
+       }
+
+       function hoverETA(element) {
+         element.setAttribute('src', 'Images/ETALogo2.svg');
+            }
+       function unhoverETA(element) {
+         element.setAttribute('src', 'Images/ETALogo.svg');
+       }
+
+       function hoverIV(element) {
+         element.setAttribute('src', 'Images/IVLogo2.svg');
+            }
+       function unhoverIV(element) {
+         element.setAttribute('src', 'Images/IVLogo.svg');
+       }
+       
+       function hoverSV(element) {
+         element.setAttribute('src', 'Images/SVweb2.svg');
+            }
+       function unhoverSV(element) {
+         element.setAttribute('src', 'Images/SVweb.svg');
+       }
+          </script>   
+
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ml-3">
-                      <a class="nav-link" href="#"><img src="Images/DMSLogo.svg" width="140" alt="EALogo"></a>
+                  <li class="nav-item ml-3 EANews">
+                      <a class="nav-link" href="#"><img src="Images/EANews1.svg"  onmouseover="hoverEANews(this);" onmouseout="unhoverEANews(this);" width="76" alt="News"></a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="#"><img src="Images/IVLogo.svg" width="42" alt="EALogo"></a>
+                  <li class="nav-item ml-3 mt-3">
+                      <a class="nav-link" href="#"><img src="Images/DMSLogo.svg" onmouseover="hoverDMS(this);" onmouseout="unhoverDMS(this);" width="126" alt="DMS"></a>
+                    </li>
+                    <li class="nav-item ml-3 mt-3">
+                        <a class="nav-link" href="#"><img src="Images/IVLogo.svg" onmouseover="hoverIV(this);" onmouseout="unhoverIV(this);" width="38" alt="IV"></a>
                       </li>
-                      <li class="nav-item ml-3">
-                          <a class="nav-link" href="#"><img src="Images/SVweb.svg" width="54" alt="EALogo"></a>
+                      <li class="nav-item ml-3 mt-3">
+                          <a class="nav-link" href="#"><img src="Images/SVweb.svg" onmouseover="hoverSV(this);" onmouseout="unhoverSV(this);" width="50" alt="SVweb"></a>
                         </li>
-                        <li class="nav-item ml-3 mr-3">
-                            <a class="nav-link" href="#"><img src="Images/ETALogo.svg" width="73" alt="EALogo"></a>
+                        <li class="nav-item ml-3 mr-3 mt-3">
+                            <a class="nav-link" href="#"><img src="Images/ETALogo.svg" onmouseover="hoverETA(this);" onmouseout="unhoverETA(this);" width="76" alt="ETA"></a>
                           </li>
                           <li>
-                          <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                          <div class="input-group mt-3">
+                            <input type="text" class="form-control d-none d-sm-none d-lg-block d-xl-block" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
                             <div class="input-group-append">
                               <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
                             </div>
                           </div>
                           </li>
+                          <!--
+                          <li>
+                            <div class="input-group mt-3 d-none d-sm-block d-lg-none d-xl-none">
+                                <button class="btn btn-outline-secondary searchButton" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                            </li>
                           
+                     <li>
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="fas fa-search"></i></button>
+                            </button>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <input type="text" class="form-control d-none d-sm-none d-lg-block d-xl-block" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                            </div>
+                          </div>
+                        </li>
+                      -->
                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> My Dashboard</a>
+                <li class="nav-item dropdown ml-3 mt-3">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">My Subscriptions</a>
+                      <a class="dropdown-item" href="#">Required Reports</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">About</a>
+                      <a class="dropdown-item" href="#">My Subscriptions</a>
                     </div>
                   </li>
                   </ul>
@@ -69,23 +124,23 @@
         </div>
       </nav>
     <!--- 2nd nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top SecondNavbar">
-      <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV_Logo.svg"></a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top SecondNavbar">
+      <a href="#"><img class="iv-logo" alt="United States Postal Service" src="Images/IV2Logo.svg"></a>
       <span id="projectBranding2">
-              <div class="projectTitle d-none d-lg-block">Informed Visibility</div>
-              <div class="projectSlogan d-none d-lg-block">The single source for all your mail visibility needs.</div>
+              <div class="projectTitle d-none d-xl-block">Informed Visibility</div>
+              <div class="projectSlogan d-none d-xl-block">The single source for all your mail visibility needs.</div>
            </span>
-           <div class="slant d-none d-lg-block"></div>
-           <div class="EATitle2 d-none d-lg-block">Enterprise Analytics</div>
+           <div class="slant d-none d-xl-block"></div>
+           <div class="EATitle2 d-none d-xl-block">Enterprise Analytics</div>
            
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#2ndTopNavbar" aria-controls="navbarsExampleDefault"
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#SecondTopNavbar" aria-controls="navbarsExampleDefault"
            aria-expanded="false" aria-label="Toggle navigation">
            <span class="menu__icon menu__icon--open"><i class="fas fa-bars"></i></span>
            <span class="menu__icon menu__icon--close">
              <i class="fas fa-times"></i></span>
          </button>
  
-    <div class="collapse navbar-collapse" id="2ndTopNavbar">
+    <div class="collapse navbar-collapse" id="SecondTopNavbar">
         <ul class="navbar-nav ml-auto">
           
            <div class="barcode-input">
@@ -100,19 +155,21 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fab fa-youtube"></i> BlueTube</a>
             </li>
+            <!--
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-envelope"></i> Contact Us</a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Reports</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Issues</a>
                 </div>
               </li>
+            -->
             </ul>
     </div>
   
   </nav>
-<!--David Code-->
+<!--David Code
   <div class="container-fluid">
     <div class="row">
       <div class="titleMargin">
@@ -320,23 +377,10 @@
         </div>
       </div>
 
-    </div> <!-- row -->
-  </div> <!-- container-fluid -->
+    </div> 
+  </div> 
   
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/typeahead.jquery.js"></script>
-  <script src="js/d3.js"></script>
-  <script src="js/crossfilter.js"></script>
-  <script src="js/d3-tip.js"></script>
-  <script src="js/crossfilter-controller.js"></script>
-  <script src="js/promise-polyfill.js"></script>
-  <script src="js/fetch.umd.js"></script>
-  <script src="js/chart-registry.js"></script>
-  <script src="js/chart-control.js"></script>
-  <script src="js/usps-charts.js"></script>
-  <script src="js/usps-data-vis.js"></script>
+ 
 
   <script>
     "use strict";
@@ -614,14 +658,8 @@
         </footer>
         
 
-  
-<!-- /.container -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
