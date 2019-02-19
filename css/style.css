@@ -25,6 +25,12 @@ h6 {
     font-weight: 700; 
 }
 
+.navbarText {
+    float: right;
+    margin-left: .2rem;
+    text-decoration: inherit;
+}
+
 [aria-expanded="false"] .menu__icon--open {
     display: block;
 }
